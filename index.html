@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -19,10 +20,6 @@
             align-items: center;
             justify-content: space-between;
         }
-        header img {
-            height: 60px;
-            margin-left: 15px;
-        }
         header h1 {
             font-family: 'Press Start 2P', cursive;
             color: whitesmoke;
@@ -34,26 +31,71 @@
             display: block;
             margin: 0 auto;
         }
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            padding: 20px;
+            align-items: center;
+        }
+        .grid-item {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            position: relative;
+        }
+        .grid-text {
+            text-align: left;
+            font-weight: bold;
+            margin-top: 10px;
+            max-width: 400px;
+            font-size: 28px;
+        }
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="logo.png" alt="Logo de la página">
-        <h1>Bienvenid@</h1>
+        <h1>Hola! :3</h1>
     </header>
     
-    <h1>Analizaré dos de mis videojuegos más jugados en pandemia </h1>
-    <p>Empezamos...</p>
+    <h1>Analizaré dos Videojuegos </h1>
+    <p>Ambos están aquí ya que han sido con los que tengo más tiempo jugados </p>
+
+    <div class="grid-container">
+        <div>
+            <div class="grid-item">
+                <img src="juego1.jpg" alt="Sky: Children of The Light">
+            </div>
+            <h1>Sky: Children of The Light</h1>
+            <p class="grid-text">Este juego lo encontré un día navegando 
+                por los juegos gratis de Nintendo Switch, me llamó la atención 
+                sus gráficos y el estilo relajante que tiene, aunque admito que en ciertas partes tan relajante no es.
+            De cierta manera también ha sido el juego dónde más dinero he gastado. Ahora está abandonado y quedó como recuerdo.</p>
+        </div>
+        <div>
+            <div class="grid-item">
+                <img src="juego2.jpg" alt="Super Smash Bros Ultimate">
+            </div>
+            <h1>Super Smash Bros Ultimate</h1>
+            <p class="grid-text">Este fue uno de los primeros que compré junto con mi Nintendo Switch
+                desde que toqué la consola este fue el primero que me puse a viciarle, completé su 
+                modo historia y se podría decir que lo exprimí hasta el final porque también conseguí personajes
+                del DLC en la Nintendo eShop y ahora lo gracioso es que ni lo toco.
+            </p>
+        </div>
+    </div>
+    </div>
     
-    <h2>Lista de temas interesantes</h2>
-    <ul style="display: inline-block; text-align: left;">
-        <li>Desarrollo Web</li>
-        <li>Diseño UI/UX</li>
-        <li>Programación</li>
-    </ul>
-    
-    <img src="imagen.jpg" alt="Ejemplo de imagen" width="300">
-    
-    <p>Para más información, visita <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>.</p>
+    <p>Ahora, el juego al que más pendiente estoy es: <a href="https://zenless.hoyoverse.com/es-es/main" target="_blank">ZZZ</a>.</p>
 </body>
 </html>

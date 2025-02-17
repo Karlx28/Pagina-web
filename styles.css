@@ -1,12 +1,33 @@
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'VT323', monospace;
+    line-height: 1.6;
+    color: #ffffff;
+    font-size: 18px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: justify;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+header img {
+    height: 75px;
+    margin-left: 15px;
+    border: none;
 }
 
 h1 {
-    color: #333;
-    font-size: 2em;
+    font-size: 45px;
+}
+
+p {
+    font-size: 30px;
 }
 
 ul {
@@ -15,6 +36,6 @@ ul {
 }
 
 img {
-    border: 2px solid #333;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    border: 2px solid #ffffff;
+    box-shadow: 5px 5px 10px rgba(241, 210, 97, 0.3);
 }
